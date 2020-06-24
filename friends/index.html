@@ -5,18 +5,18 @@
   <meta charset="UTF-8" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="">
+<meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#000">
 <title>瓜皮小站</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1592987851667">
+<link rel="shortcut icon" href="/favicon.ico?v=1592990100502">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/github.css"
+<link href="/media/hljs/styles/androidstudio.css"
   rel="stylesheet">
 
 <link rel="stylesheet" href="/styles/main.css">
@@ -62,6 +62,8 @@
             </a>  
           
         </div>
+        
+          <p class="subtitle">精于心，简于形</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -113,6 +115,12 @@
           
           
           
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -151,7 +159,7 @@
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name"></p>
+    <p class="site-author-name">十辰弓</p>
     
   </div>
   <div class="sidebar-item side-item-stat right-motion">
@@ -177,18 +185,43 @@
   </div>
   
     
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://guagua-1.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
   
   
 
   
+    <div class="sidebar-item right-motion sidebar-item-friends">
+      
+        <p class="friends-title"><i class="fa fa-ship"></i> 友情链接</p>
+      
+      <div class="friends-box">
+        
+          <p>
+            <a href=""></a>
+          </p>
+        
+      </div>
+    </div>
+  
 
 
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
 
 </div>
 </div>
 <script>
   let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = '';
+  let scheme = 'pisces';
   let sidebarWrapper = document.querySelector('.sidebar-wrapper');
   if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
     document.addEventListener('scroll', function(e) {
@@ -203,7 +236,23 @@
         <div class="section-box pisces box-shadow-wrapper">
           <section class="friends-section bg-color slide-down-in">
             <div class="firends-box">
-              <h1 class="firends-title" itemprop="name headline"></h1>
+              <h1 class="firends-title" itemprop="name headline">友情链接</h1>
+              
+              
+              <a href="" target="_blank">
+                <div class="firends-item">
+                  <img src="" />
+                  <div class="right">
+                    <div class="top">
+                      
+                    </div>
+                    <div class="bottom">
+                      
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
               
             </div>
             <hr>
@@ -229,7 +278,54 @@
               </ul>
             </div>
             
-  
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'U0c9KJKKhYU85SEj0ubThvNk-MdYXbMMI',
+    appKey: 'THtN22WFORWJP6UwOh3bVpgS',
+    avatar: 'monsterid',
+    placeholder: '',
+    pageSize: '',
+    lang: 'zh-cn',
+    enableQQ: 'true' === 'true',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'false',
+  });
+</script>
 
           </section>
         </div>
@@ -258,11 +354,12 @@
   
   
   
+  <div class="bg-img">
+    <img src="\media\images\custom-bgImg.png" />
+  </div>
   
   
   
-  
-
   
 </div>
 <script>
@@ -392,7 +489,7 @@
   }
 
   // 链接跳转
-  let newWindow = ''
+  let newWindow = 'true'
   if (newWindow === 'true') {
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
@@ -426,6 +523,173 @@
 </script>
   </div>
 </body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://guagua-1.github.io/post/mo-bu-zhao-tou-nao/"" data-c="
+          &lt;p&gt;🕐贫穷限制了我的想象力。&lt;br&gt;
+🕑还有什么是你不知道的。&lt;/p&gt;
+&lt;p&gt;联系方式&lt;br&gt;
+🐧QQ：270558303&lt;br&gt;
+&lt;img src=&#34;https://guagua-1.github.io/post-images/1592985401445.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">关于</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://guagua-1.github.io/post/tu-pian-ce-shi/"" data-c="
+          &lt;p&gt;1、&lt;img src=&#34;https://guagua-1.github.io/post-images/1592982399621.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+2、&lt;img src=&#34;https://guagua-1.github.io/post-images/1592982416396.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+3、&lt;img src=&#34;https://guagua-1.github.io/post-images/1592982428050.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+4、&lt;img src=&#34;https://guagua-1.github.io/post-images/1592982440252.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">图片测试</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://guagua-1.github.io/post/ke-yi-zhe-hen-tx/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://guagua-1.github.io/post-images/1592982366777.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+又是一年花开季，偻城踏马四相离。&lt;br&gt;
+🤑一直想弄个blog很久了，忙活了一上午，还花费了20大洋，感觉被坑了还没有头绪。直到遇见它，走过简单的教程啊。发一篇文试一试。&lt;br&gt;
+🤣域名终于审核过了，感觉还是被坑了，虚拟主机30天有效期，就酱紫吧，几年前没折腾成功的网站今天终于勉强能用了，喜大普奔。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;什么也没有😃😃&lt;/p&gt;
+">可以，这很TX</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
 
 <input hidden id="copy" />
 <script>
@@ -573,6 +837,8 @@
   });
 </script>
 
+
+<script src="/media/js/mouse/love.js"></script>
 
 
 
