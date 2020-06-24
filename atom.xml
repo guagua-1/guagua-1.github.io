@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://guagua-1.github.io</id>
     <title>瓜皮小站</title>
-    <updated>2020-06-24T07:07:59.745Z</updated>
+    <updated>2020-06-24T07:58:37.125Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://guagua-1.github.io"/>
     <link rel="self" href="https://guagua-1.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://guagua-1.github.io/images/avatar.png</logo>
     <icon>https://guagua-1.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 瓜皮小站</rights>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://guagua-1.github.io/post/mo-bu-zhao-tou-nao/</id>
+        <link href="https://guagua-1.github.io/post/mo-bu-zhao-tou-nao/">
+        </link>
+        <updated>2020-06-24T07:39:09.000Z</updated>
+        <content type="html"><![CDATA[<p>🕐贫穷限制了我的想象力。<br>
+🕑还有什么是你不知道的。</p>
+<p>联系方式<br>
+🐧QQ：270558303<br>
+<img src="https://guagua-1.github.io/post-images/1592985401445.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[图片测试]]></title>
         <id>https://guagua-1.github.io/post/tu-pian-ce-shi/</id>
